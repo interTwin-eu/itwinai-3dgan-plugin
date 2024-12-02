@@ -17,6 +17,14 @@ pip install --no-cache-dir -e .
 > Python commands below assumed to be executed from within the
 > virtual environment.
 
+
+In python you can import the plugin as:
+
+```python
+import itwinai.plugins.tdgan
+from itwinai.plugins.tdgan.model import Generator
+```
+
 ## Training
 
 Before you can start training, you have to download the data using the dataloading script:
