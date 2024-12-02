@@ -205,6 +205,11 @@ itwinai exec-pipeline --print-config --config $CERN_CODE_ROOT/config.yaml \
 
 ## Docker image
 
+> [!WARNING]
+> This section regarding container images is not up to date.
+> For instance, Docker image names are still referring the itwinai library, but
+> should reference this repo.
+
 Build from project root with
 
 ```bash
