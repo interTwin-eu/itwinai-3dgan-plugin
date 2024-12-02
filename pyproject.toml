@@ -3,13 +3,39 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "itwinai-awesome-plugin"
+name = "itwinai-3dgan-plugin"
 version = "0.1.0"
-description = "User's custom plugin for itwinai"
-authors = [{ name = "User Name", email = "user@example.com" }]
-dependencies = ["itwinai"]
+description = "3DGAN plugin for itwinai"
+authors = [
+    { name = "Matteo Bunino", email = "matteo.bunino@cern.ch" },
+    { name = "Kalliopi Tsolaki", email = "kalliopi.tsolaki@cern.ch" },
+]
+dependencies = [
+    "itwinai[torch,nvidia]@git+https://github.com/interTwin-eu/itwinai@main",
+    "h5py>=3.7.0",
+    "google>=3.0.0",
+    "protobuf>=4.24.3",
+    "gdown>=4.7.1",
+    # "plotly>=5.18.0",
+    # "kaleido>=0.2.1",
+]
 
 [tool.setuptools.packages.find]
 # Declare this package as part of the `itwinai.plugins` namespace
 where = ["src"]
-include = ["itwinai.plugins.my_awesome_plugin"]
+include = ["itwinai.plugins.tdgan"]
+
+# Ruff configuration: https://docs.astral.sh/ruff/configuration/
+[tool.ruff]
+line-length = 95
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E203"]
+fixable = ["ALL"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"

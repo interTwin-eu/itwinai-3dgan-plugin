@@ -1,14 +1,22 @@
 {
-    "markdownlint.config": {
-        "MD013": {
-            "line_length": 120,
-            "code_blocks": false,
-            "tables": false
-          },
-          "MD014": false,
-          "MD024": false,
-          "MD026": {
-            "punctuation": ".,:;!"
-          }
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": null,
+  "editor.rulers": [
+    95
+  ],
+  "markdownlint.config": {
+    "MD013": {
+      "line_length": 120,
+      "code_blocks": false,
+      "tables": false
+    },
+    "MD014": false,
+    "MD024": false,
+    "MD026": {
+      "punctuation": ".,:;!"
     }
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
 }
