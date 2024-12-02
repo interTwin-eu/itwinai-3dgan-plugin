@@ -3,7 +3,8 @@
 exp_data/
 *.pth
 3dgan-generated-data
-ml_logs/
+ml_logs
+checkpoints
 
 
 # Byte-compiled / optimized / DLL files
