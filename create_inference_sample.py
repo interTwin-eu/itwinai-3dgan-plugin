@@ -14,7 +14,7 @@ import os
 
 import torch
 
-from .model import ThreeDGAN
+from itwinai.plugins.tdgan.model import ThreeDGAN
 
 
 def create_checkpoint(root: str = ".", ckpt_name: str = "3dgan-inference.pth"):

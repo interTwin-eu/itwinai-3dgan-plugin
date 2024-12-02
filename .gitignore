@@ -1,6 +1,10 @@
 # 3DGAN
 
 exp_data/
+*.pth
+3dgan-generated-data
+ml_logs/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
