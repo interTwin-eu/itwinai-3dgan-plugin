@@ -17,7 +17,6 @@ pip install --no-cache-dir -e .
 > Python commands below assumed to be executed from within the
 > virtual environment.
 
-
 In python you can import the plugin as:
 
 ```python
