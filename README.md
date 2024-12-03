@@ -4,6 +4,10 @@
 
 First, create a Python virtual environment, then install the plugin.
 
+> [!NOTE]
+> On HPC, remember to activate the correct software modules **before**
+> creating the virtual environment.
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
